@@ -1,0 +1,128 @@
+.skills {
+
+  }
+
+  .skills__wrapper {
+    display: grid;
+    place-items: center;
+    // padding: 50px 0;
+  }
+
+  .skills__header {
+      font-size: 1.1em;
+
+  }
+  .skills__text {
+      font-size: 1.3em;
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--light-orange);
+  }
+
+
+  .snake-grid {
+      position: relative;
+      display: grid;
+      gap: 2em;
+      margin: 2em;
+    }
+    .snake-item {
+      display: grid;
+
+      grid-template-columns: repeat(2, minmax(200px,476px));
+      align-content: center;
+      column-gap: 4em;
+
+      border-radius: 8px;
+    position: relative;
+    align-items: center;
+
+  /* _____фон */
+    }
+
+    .snake-item .skills__header,
+    .snake-item .skills__text {
+      width: -webkit-fill-available;
+      padding: 31px 27px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
+    }
+
+
+   .snake-item:nth-child(odd) .skills__text {
+      grid-area: 1/2;
+    }
+
+   .snake-item:nth-child(even) .skills__header {
+      grid-area: 1/2;
+    }
+
+
+   .snake-item:nth-child(odd) .skills__header,
+    .snake-item:nth-child(even) .skills__text {
+      text-align: right;
+    }
+
+    /*__________линия */
+
+    .snake-grid:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background: #FFA559;
+  }
+
+  /* ______шарики */
+
+  .snake-item:before {
+      content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+      left: 49.2%;
+      background-color: #313131;
+    border: 2px solid var(--light-orange);
+      z-index: 3;
+  }
+
+
+  /* ____________________адаптив */
+
+
+  @media (max-width: 798px) {
+
+  .snake-item {
+      align-items: flex-start;
+  }
+   .snake-grid::after{
+      left: 0;
+    }
+
+      .snake-item:nth-child(odd),
+      .snake-item:nth-child(even) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2em;
+      gap: 1em;
+    }
+
+      /* кружочкиы */
+     .snake-item:before{
+        left: 0;
+        transform: translate(-223%);
+    }
+     .snake-item:nth-child(odd) .skills__header, .snake-item:nth-child(even) .skills__text {
+          text-align: left;
+      }
+  }
+
+
+
+
+
+
+

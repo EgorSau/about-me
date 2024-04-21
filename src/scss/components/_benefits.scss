@@ -1,0 +1,45 @@
+.benefits {
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+@include tablet {
+  flex-direction:column;
+}
+  &__header {
+    float: left;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 40px;
+    color:var(--light-orange);
+    @include mobile {
+      font-size: 1.7em;
+    }
+  }
+  &__list {
+    grid-template-columns: auto auto;
+    gap: 1em;
+    @include mobile {
+      grid-template-columns: auto;
+    }
+  }
+  &__item {
+
+    background-color: rgb(59, 59, 59);
+    padding: 1.5em;
+    border-radius: 1em;
+    gap: 1.5em;
+
+    display:flex;
+  }
+  &__item > svg {
+    min-width: 60px;
+    height: 55px;
+    &:hover,
+    &:active {
+      fill: var(--white);
+    }
+  }
+  &__icon {
+    fill: var(--light-orange);
+  }
+}

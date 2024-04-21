@@ -1,0 +1,56 @@
+.socials {
+  @include flex-all-sb;
+  flex-direction: column;
+  max-width: fit-content;
+  gap: var(--small-gap);
+  justify-content: center;
+  align-content: flex-end;
+
+&__github,
+&__email {
+  transform: translateY(5px) scale(.9);
+  content: '';
+  height: 5px;
+  z-index: -1;
+  bottom: -1%;
+  left: 0;
+  right: 0;
+  transition: .2s all ease-in-out;
+
+  &:hover:before {
+    transform: translateY(8px) scale(.8);
+    opacity: .8;
+
+  }
+
+&:hover{
+  transform: translateY(-5px);
+}
+
+}
+&__bar-link {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white);
+}
+
+}
+
+
+svg {
+width: 40px;
+height: 40px;
+fill:var(--white);
+&:hover {
+  fill: var(--light-orange);
+  transition: var(--transition);
+}
+&:focus,
+&:active {
+  fill: var(--orange);
+}
+}
+
+.bottom-socials {
+  flex-direction: row;
+}

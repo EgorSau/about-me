@@ -1,0 +1,25 @@
+:root {
+  // base
+  --font-family: "Golos", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --small-gap: 20px;
+  --medium-gap: 40px;
+  --large-gap: 670px;
+  // colors
+  --light-orange: #FFA559;
+  --white: #FFE6C7;
+  --deep-white: #aaaaaa;
+  --orange: #FF6000;
+  --dark: #454545;
+  --gradient: rgba(69, 69, 69, 0,3);
+  --gradient-light: rgba(69, 69, 69, 0);
+
+  // fonts
+  --shift: 4.7rem;
+
+  //transition
+  --transition: all .3s ease;
+}
+

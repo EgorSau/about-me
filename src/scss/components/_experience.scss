@@ -1,0 +1,36 @@
+.experience {
+  // background-color: var(--dark);
+  // padding: 60px 0;
+  // background: linear-gradient(to bottom, var(--gradient), var(--gradient-light));
+  &__wrapper {
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__content-wrapper {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2em;
+    @include tablet {
+      margin-bottom: 2em;
+    }
+  }
+  &__text {
+// font-size: ;
+  // padding-top: 30px;
+  text-align: left;
+  @include mobile {
+    font-size: 1em;
+  }
+  }
+  &__icon {
+    fill: var(--light-orange);
+    width: 80px;
+    height: 80px;
+    @include mobile {
+      height: 5em;
+    }
+  }
+}

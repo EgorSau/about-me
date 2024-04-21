@@ -1,0 +1,30 @@
+.btn-down {
+  color: var(--white);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  text-shadow: 3px -2px 15px rgba(0,0,0,0.6);
+
+  transform: rotate(90deg);
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+
+  opacity: 0.4;
+  @include tablet {
+    font-size: 1.5em;
+    right: -2%;
+  }
+  @include mobile {
+    font-size: 1.2em;
+  }
+  &:hover {
+background: none;
+opacity:1;
+  }
+  &:focus,
+  &:active {
+    color: var(--orange);
+  }
+}

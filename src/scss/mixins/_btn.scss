@@ -1,0 +1,56 @@
+@mixin button {
+  display: inline-block;
+    font-weight: 700;
+    color: var(--white);
+    border: 3px dashed var(--light-orange);
+    border-radius: 30px;
+    background-color: transparent;
+    // opacity: 0.5;
+    padding: 5px 35px;
+    cursor: pointer;
+
+position: relative;
+overflow: hidden;
+
+
+&:before {
+  position: absolute;
+  content: "";
+  left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 0;
+
+    transition: all 0.2s ease;
+}
+&:hover:before {
+  // height: 100%;
+  // background-color: var(--orange);
+  // color: var(--white);
+  // opacity: 0.1;
+}
+&:active:before {
+  // background-color: var(--light-orange);
+  // color: var(--orange);
+  height: 100%;
+  background-color: var(--light-orange);
+  color: var(--white);
+
+  // opacity: 0.1;
+}
+&:hover {
+  border: 3px solid var(--light-orange);;
+}
+
+&:active {
+z-index: 1;
+}
+
+}
+
+@mixin button-text {
+  position: relative;
+  color: var(--white);
+
+}
