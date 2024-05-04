@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Saushkin Egor</title>
+  <link rel="preload" href="fonts/GolosText-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/GolosText-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header" >
+  <div class="container">
+    <nav class="header__nav " title="Навигация страницы">
+      <ul class="header__ancor-bar">
+        <li><a class="header__bar-link" href="#page-1">Главная</a></li>
+        <li class="header__bar-link"><a class="header__bar-link" href="#page-2">Резюме</a></li>
+        <li><a class="header__bar-link" href="#page-4">Стек</a></li>
+      </ul>
+      <ul class="header__burger">
+        <li class="header__burger-element"></li>
+        <li class="header__burger-element"></li>
+        <li class="header__burger-element"></li>
+      </ul>
+      <a class="header__button" href="./resume.pdf" download="резюме">
+        <svg class="header__icon">
+          <use xlink:href=img/sprite.svg#cv></use>
+        </svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="banner container section-scroll" id="page-1">
+    <div class="banner__text-wrapper grid">
+      <div class="banner__developer-greeting">
+        <p class="banner__text-hello">Привет! Я</p>
+        <h2 class="banner__text-name">Егор Саушкин</h2>
+        <h1 class="banner__text-ios">IOS разработчик</h1>
+        <!-- <a class="banner__button" href="#page-5"><p class="banner__button-text">Связаться со мной</p></a> -->
+      </div>
+      <div class="banner__developer-info">
+        <ul class="socials">
+  <li class="socials__item">
+    <a class="socials__telegram" href="https://t.me/egorsau">
+        <svg>
+        <use width="40" height="40" xlink:href=img/sprite.svg#telegram></use>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a href="https://github.com/EgorSau" class="socials__github">
+      <svg>
+        <use xlink:href=img/sprite.svg#github></use>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a class="socials__email" href="#">
+      <svg>
+        <use width="40" height="40" xlink:href=img/sprite.svg#mail></use>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a class="socials__linkedin" href="https://www.linkedin.com/in/egor-s-760b88262/">
+      <svg>
+        <use width="40" height="40" xlink:href=img/sprite.svg#linkedin></use>
+      </svg>
+    </a>
+  </li>
+  <li class="socials__item">
+    <a class="socials__headhunter" href="#">
+      <svg>
+        <use width="40" height="40" xlink:href=img/sprite.svg#hh></use>
+      </svg>
+    </a>
+  </li>
+  </ul>
+
+      </div>
+      <picture class="banner__photo">
+        <img  class="banner__img"src="./img/developer-photo.png" alt="Фото разработчика" width="450px" height="370px">
+      </picture>
+
+    </div>
+  </section>
+
+      <section class="experience section-scroll" id="page-2">
+  <div class="experience__wrapper container grid">
+    <div class="experience__content-wrapper ">
+      <svg class="experience__icon"width="200" height="200">
+        <use xlink:href=img/sprite.svg#unique></use>
+      </svg>
+      <h2 class="experience__text" >Мой опыт
+      </h2>
+      <p class="experience__text">Я в разработке на Swift 4 года. За это время я поучаствовал в нескольких командных проектах, все проекты опубликованы в AppStore (последний в ближайшее время будет). За это время я работал как разработчик и как тим-лид, а сейчас работаю в старт-апе.
+      </p>
+    </div>
+    <div class="experience__content-wrapper ">
+      <svg class="experience__icon">
+        <use xlink:href="img/sprite.svg#unique"></use>
+      </svg>
+      <h2 class="experience__text ">Что меня выделяет среди других?
+      </h2>
+      <p class="experience__text ">У меня уникальный опыт работы в международной компании по закупкам Renault-Nissan (10 лет). Я — руководил командой по закупкам до 9 человек. Занимался обучением персонала и рекрутингом. В целом у меня богатый опыт ведения проектов, за которые я могу нести ответственность и довести до их конца с выгодой для компании.</p>
+    </div>
+  </div>
+
+    </section>
+
+      <section class="benefits container  grid section-scroll">
+
+  <h3 class="benefits__header">
+    Чем я буду полезен в вашей компании?
+  </h3>
+  <ul class="benefits__list grid">
+    <li class="benefits__item">
+      <svg>
+        <use width="44" height="44" xlink:href=img/sprite.svg#checkmark></use>
+      </svg>
+      <p class="benefits__text">
+        Я работал в нескольких командах, что позволяет мне легко встроиться в новую.
+      </p>
+    </li>
+    <li class="benefits__item">
+      <svg>
+        <use width="44" height="40" xlink:href=img/sprite.svg#checkmark></use>
+      </svg>
+      <p class="betefits__text">
+        У меня есть опыт разработки приложения «с нуля».
+      </p></li>
+    <li class="benefits__item">
+      <svg>
+        <use width="44" height="40" xlink:href=img/sprite.svg#checkmark></use>
+      </svg>
+      <p class="betefits__text">
+        Проекты, в которых я работал, залиты в AppStore.
+      </p></li>
+    <li class="benefits__item">
+      <svg>
+        <use width="44" height="40" xlink:href=img/sprite.svg#checkmark></use>
+      </svg>
+      <p class="betefits__text">Я работал с чужим кодом и делал код-ревью.
+      </p></li>
+    <li class="benefits__item">
+    <svg>
+        <use width="44" height="40" xlink:href=img/sprite.svg#checkmark></use>
+      </svg>
+    <p class="betefits__text">
+      У меня есть опыт с Firebase, Coredata, Rest API, Unit-Tests.
+    </p></li>
+    <li class="benefits__item">
+      <svg class="benefit__icon">
+        <use  width="44" height="40" xlink:href=img/sprite.svg#checkmark></use>
+      </svg>
+      <p class="betefits__text">
+        У меня есть опыт написания приложений на архитектурах MV (X) и Clean Swift.
+      </p></li>
+    <li class="benefits__item">
+      <svg>
+        <use class="benefit__icon" width="44" height="40" xlink:href=img/sprite.svg#checkmark></use>
+      </svg>
+      <p class="betefits__text">
+        Сейчас я самостоятельно изучаю Swift UI, есть базовый опыт и понимание фреймворка.
+      </p></li>
+    <li class="benefits__item">
+      <svg>
+        <use class="benefit__icon" width="44" height="40" xlink:href=img/sprite.svg#checkmark></use>
+      </svg>
+      <p class="betefits__text">Всегда готов изучать новые технологии и как можно быстрее внедрять их в проект.
+      </p></li>
+  </ul>
+
+</section>
+
+      <section class="skills " id="page-4">
+  <div class="skills__wrapper">
+    <h2 class="skills__name">Стек</h2>
+    <ul class="snake-grid">
+          <li class="snake-item">
+            <h3 class="skills__header">Основные технологии:</h3>
+            <p class="skills__text">Swift, GIT, Figma, JIRA</p>
+        </li>
+        <li class="snake-item">
+            <h3 class="skills__header">User Interface:</h3>
+            <p class="skills__text">UIKit, Swift UI (база), верстка: code, Storyboard, Xib, CoreAnimation/ UIPropertyAnimator, AIG</p>
+        </li>
+        <li class="snake-item">
+            <h3 class="skills__header">Фреймворки (CocoaPods, SPM):</h3>
+            <p class="skills__text">SnapKit, Alamofire, Firebase</p>
+        </li>
+        <li class="snake-item">
+            <h3 class="skills__header">Базы Данных:</h3>
+            <p class="skills__text">Coredata, User Defaults</p>
+        </li>
+        <li class="snake-item">
+            <h3 class="skills__header">Методологии:</h3>
+            <p class="skills__text">SOLID, OOP, POP, YAGNI, DRY, KISS, Agile Scrum</p>
+        </li>
+        <li class="snake-item">
+            <h3 class="skills__header">Английский:</h3>
+            <p class="skills__text">С1(Advanced — свободное владение)</p>
+        </li>
+      </ul>
+</section>
+
+      <a class="btn-down" href="#page-1">
+  наверх
+</a>
+
+    </main>
+  </div>
+</body>
+</html>

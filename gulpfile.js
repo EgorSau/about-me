@@ -325,32 +325,3 @@ exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, i
 exports.cache = series(cache, rewrite);
 
 exports.zip = zipFiles;
-
-
-// browserSync
-
-const gulp = require('gulp');
-const browsersync = require('browser-sync').create();
-
-gulp.task('serve', function() {
-  browsersync.init({
-    server: './dist' // Директория сборки вашего сайта
-  });
-
-  gulp.watch('./src/**/*.html').on('change', browsersync.reload);
-  gulp.watch('./src/**/*.css').on('change', browsersync.reload);
-});
-
-// открытие в разных браузерах
-
-// gulp.task('default', gulp.series('serve'));
-
-// // const gulp = require('gulp');
-// const open = require('gulp-open');
-
-// gulp.task('open', function() {
-//   gulp.src('./dist/index.html') // Путь к вашему файлу index.html
-//     .pipe(open({ app: ['google-chrome', 'firefox', 'safari', 'opera'] })); // Список браузеров, в которых нужно открыть сайт
-// });
-
-// gulp.task('default', gulp.series('open'));

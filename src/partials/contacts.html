@@ -2,50 +2,11 @@
   <h3 class="contacts__header">Связаться со мной</h3>
   <div class="contacts__wrapper container">
     @include('../partials/btn-arrow.html')
-
-
-    <ul class="socials bottom-socials">
-      <li class="socials__item">
-        <a class="socials__telegram" href="https://t.me/egorsau">
-            <svg>
-            <use width="40" height="40" xlink:href=img/sprite.svg#telegram></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a href="https://github.com/EgorSau" class="socials__github">
-          <svg>
-            <use xlink:href=img/sprite.svg#github></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__email" href="#">
-          <svg>
-            <use width="40" height="40" xlink:href=img/sprite.svg#mail></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__linkedin" href="https://www.linkedin.com/in/egor-s-760b88262/">
-          <svg>
-            <use width="40" height="40" xlink:href=img/sprite.svg#linkedin></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__headhunter" href="#">
-          <svg>
-            <use width="40" height="40" xlink:href=img/sprite.svg#hh></use>
-          </svg>
-        </a>
-      </li>
-      </ul>
-
-    <!-- <div class="contacts__modal-window">
+    @include('../partials/socials.html')
+    <div class="contacts__modal-window">
       @include('../partials/popup.html')
 
-    </div> -->
+    </div>
 
   </div>
 </section>
